@@ -1,14 +1,13 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
-const userKey = 'TodoData'
+const userKey = 'TodoData2'
 
 const userInput = $('.add-section__input')
 const addBtn = $('.add-section__submit')
 const ulElement = $('.todo-list')
 const app = {
-    getDataStorage: localStorage.getItem(userKey) || [],
-    userData: JSON.parse(localStorage.getItem(userKey)),
+    userData: JSON.parse(localStorage.getItem(userKey)) || [],
     render: function () {
         const renderHtml = this.userData.map( (element,index) => {
             return `
