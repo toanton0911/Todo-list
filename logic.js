@@ -1,7 +1,7 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
-const userKey = 'TodoData2'
+const userKey = 'TodoData'
 
 const userInput = $('.add-section__input')
 const addBtn = $('.add-section__submit')
